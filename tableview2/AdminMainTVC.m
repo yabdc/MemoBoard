@@ -78,7 +78,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    cell.accessoryView = [self addCustAccessoryBtn:indexPath.row];
+    cell.accessoryView = [self addCustAccessoryBtn];
     cell.textLabel.text= bandArray[indexPath.row];
     // Configure the cell...
     
@@ -86,7 +86,7 @@
 }
 
 
--(UIButton *)addCustAccessoryBtn:(int)no{
+-(UIButton *)addCustAccessoryBtn{
     UIImage *accessoryImg = [UIImage imageNamed:@"settings-25"];
     CGRect imgFrame = CGRectMake(0, 0, accessoryImg.size.width, accessoryImg.size.height);
     UIButton *custAccessoryBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -94,8 +94,6 @@
     [custAccessoryBtn setBackgroundImage:accessoryImg forState:UIControlStateNormal];
     [custAccessoryBtn setBackgroundColor:[UIColor clearColor]];
     [custAccessoryBtn addTarget:self action:@selector(pressAccessoryBtn:) forControlEvents:UIControlEventTouchUpInside];
-    custAccessoryBtn.tag=no;
-    
     
     return custAccessoryBtn;
     
@@ -104,7 +102,11 @@
 
 -(void)pressAccessoryBtn:(UIButton *)button{
     //    NSLog(@"test sucess");
-    //    NSLog(@"%d",button.tag);
+    //獲得Cell：button的上一層是UITableViewCell
+    UITableViewCell *cell = (UITableViewCell *)button.superview;
+    //然后使用indexPathForCell方法，就得到indexPath了~
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    //  NSLog(@"%ld",(long)indexPath.row);
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"一經刪除便無法復原" preferredStyle:UIAlertControllerStyleActionSheet];
     
     //  利用NSMutableAttributedString，設定多種屬性及Range去變更alertController(局部或全部)字級、顏色，Range:“警告”為兩個字元，所以設定0~2
@@ -116,18 +118,21 @@
     //Delete
     UIAlertAction *deleteAction = [UIAlertAction actionWithTitle:@"刪除" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
+        NSMutableAttributedString *delectstring = [[NSMutableAttributedString alloc]initWithString:@"刪除群組"];
+        [delectstring addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, delectstring.length)];
+        
         UIAlertController *alertController = [UIAlertController
-                                              alertControllerWithTitle:@"刪除群組"
+                                              alertControllerWithTitle:@""
                                               message:@"一經刪除便無法復原"
                                               preferredStyle:UIAlertControllerStyleAlert];
-        
+        [alertController setValue:delectstring forKey:@"attributedTitle"];
        
         
         UIAlertAction *okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK action")
                                                            style:UIAlertActionStyleDefault handler:^(UIAlertAction *action)
                                    {
-                                         
-                                       
+                                       [bandArray removeObjectAtIndex:indexPath.row];
+                                       [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
                                    }];
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"Cancel action") style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
             //
@@ -149,7 +154,7 @@
         [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField)
          {
              textField.placeholder = @"群組名稱";
-             textField.text=bandArray[button.tag];
+             textField.text=bandArray[indexPath.row];
          }];
         
         UIAlertAction *okAction = [UIAlertAction
@@ -158,7 +163,7 @@
                                    handler:^(UIAlertAction *action)
                                    {
                                        UITextField *name = alertController.textFields.firstObject;
-                                       bandArray[button.tag]=name.text;
+                                       bandArray[indexPath.row]=name.text;
                                        [self.tableView reloadData];
                                    }];
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"Cancel action") style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
