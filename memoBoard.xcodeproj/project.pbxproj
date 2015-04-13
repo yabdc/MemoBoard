@@ -14,12 +14,15 @@
 		63A7221A1A92CF9E003C143A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A722191A92CF9E003C143A /* Images.xcassets */; };
 		63A7221D1A92CF9E003C143A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A7221B1A92CF9E003C143A /* LaunchScreen.xib */; };
 		63A722291A92CF9E003C143A /* tableview2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A722281A92CF9E003C143A /* tableview2Tests.m */; };
+		B617881B1AD94C4700CF1D4A /* SearchTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B617881A1AD94C4700CF1D4A /* SearchTVC.m */; };
+		B617881E1AD94CD200CF1D4A /* AdminMainTVC-2.m in Sources */ = {isa = PBXBuildFile; fileRef = B617881D1AD94CD200CF1D4A /* AdminMainTVC-2.m */; };
 		B6195DB41AD6488500F75E7E /* megaphone2-24.png in Resources */ = {isa = PBXBuildFile; fileRef = B6195DB11AD6488500F75E7E /* megaphone2-24.png */; };
 		B6195DB51AD6488500F75E7E /* purchase_order-26.png in Resources */ = {isa = PBXBuildFile; fileRef = B6195DB21AD6488500F75E7E /* purchase_order-26.png */; };
 		B6195DB61AD6488500F75E7E /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = B6195DB31AD6488500F75E7E /* search.png */; };
 		B6195DB91AD64A2900F75E7E /* AdminMainTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6195DB81AD64A2900F75E7E /* AdminMainTVC.m */; };
 		B6195DBC1AD64D0F00F75E7E /* FollowListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6195DBB1AD64D0F00F75E7E /* FollowListTVC.m */; };
 		B6195DBF1AD64D3B00F75E7E /* FollowContentTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6195DBE1AD64D3B00F75E7E /* FollowContentTVC.m */; };
+		B626B8411ADAF5000021C80E /* ShowMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B626B8401ADAF5000021C80E /* ShowMessageVC.m */; };
 		B6AE5DCD1AD8C92600165146 /* settings-25.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE5DCC1AD8C92600165146 /* settings-25.png */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,10 @@
 		63A722221A92CF9E003C143A /* memoBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memoBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A722271A92CF9E003C143A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63A722281A92CF9E003C143A /* tableview2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableview2Tests.m; sourceTree = "<group>"; };
+		B61788191AD94C4700CF1D4A /* SearchTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTVC.h; sourceTree = "<group>"; };
+		B617881A1AD94C4700CF1D4A /* SearchTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTVC.m; sourceTree = "<group>"; };
+		B617881C1AD94CD200CF1D4A /* AdminMainTVC-2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AdminMainTVC-2.h"; sourceTree = "<group>"; };
+		B617881D1AD94CD200CF1D4A /* AdminMainTVC-2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AdminMainTVC-2.m"; sourceTree = "<group>"; };
 		B6195DB11AD6488500F75E7E /* megaphone2-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "megaphone2-24.png"; sourceTree = "<group>"; };
 		B6195DB21AD6488500F75E7E /* purchase_order-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purchase_order-26.png"; sourceTree = "<group>"; };
 		B6195DB31AD6488500F75E7E /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
@@ -56,6 +63,8 @@
 		B6195DBB1AD64D0F00F75E7E /* FollowListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowListTVC.m; sourceTree = "<group>"; };
 		B6195DBD1AD64D3B00F75E7E /* FollowContentTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowContentTVC.h; sourceTree = "<group>"; };
 		B6195DBE1AD64D3B00F75E7E /* FollowContentTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowContentTVC.m; sourceTree = "<group>"; };
+		B626B83F1ADAF5000021C80E /* ShowMessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMessageVC.h; sourceTree = "<group>"; };
+		B626B8401ADAF5000021C80E /* ShowMessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMessageVC.m; sourceTree = "<group>"; };
 		B6AE5DCC1AD8C92600165146 /* settings-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-25.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,14 +113,20 @@
 				63A722131A92CF9E003C143A /* ViewController.h */,
 				63A722141A92CF9E003C143A /* ViewController.m */,
 				63A722161A92CF9E003C143A /* Main.storyboard */,
+				B626B83F1ADAF5000021C80E /* ShowMessageVC.h */,
+				B626B8401ADAF5000021C80E /* ShowMessageVC.m */,
 				63A722191A92CF9E003C143A /* Images.xcassets */,
 				63A7221B1A92CF9E003C143A /* LaunchScreen.xib */,
-				B6195DB71AD64A2900F75E7E /* AdminMainTVC.h */,
-				B6195DB81AD64A2900F75E7E /* AdminMainTVC.m */,
 				B6195DBA1AD64D0F00F75E7E /* FollowListTVC.h */,
 				B6195DBB1AD64D0F00F75E7E /* FollowListTVC.m */,
 				B6195DBD1AD64D3B00F75E7E /* FollowContentTVC.h */,
 				B6195DBE1AD64D3B00F75E7E /* FollowContentTVC.m */,
+				B6195DB71AD64A2900F75E7E /* AdminMainTVC.h */,
+				B6195DB81AD64A2900F75E7E /* AdminMainTVC.m */,
+				B617881C1AD94CD200CF1D4A /* AdminMainTVC-2.h */,
+				B617881D1AD94CD200CF1D4A /* AdminMainTVC-2.m */,
+				B61788191AD94C4700CF1D4A /* SearchTVC.h */,
+				B617881A1AD94C4700CF1D4A /* SearchTVC.m */,
 				63A7220C1A92CF9E003C143A /* Supporting Files */,
 			);
 			path = tableview2;
@@ -259,11 +274,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				63A722151A92CF9E003C143A /* ViewController.m in Sources */,
+				B617881B1AD94C4700CF1D4A /* SearchTVC.m in Sources */,
 				B6195DBF1AD64D3B00F75E7E /* FollowContentTVC.m in Sources */,
 				B6195DB91AD64A2900F75E7E /* AdminMainTVC.m in Sources */,
 				63A722121A92CF9E003C143A /* AppDelegate.m in Sources */,
+				B617881E1AD94CD200CF1D4A /* AdminMainTVC-2.m in Sources */,
 				63A7220F1A92CF9E003C143A /* main.m in Sources */,
 				B6195DBC1AD64D0F00F75E7E /* FollowListTVC.m in Sources */,
+				B626B8411ADAF5000021C80E /* ShowMessageVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@class ViewController;
+
+@protocol ViewControllerDelegate <NSObject>
+
+-(void) ViewController:(ViewController *)ViewController messageDic:(NSDictionary *)message;
+
+@end
 @interface ViewController : UIViewController
 
-
+@property (assign,nonatomic) NSInteger flag;//1.新增  2.修改
+@property (nonatomic,strong) NSMutableDictionary *messageDic;
+@property (strong,nonatomic) id<ViewControllerDelegate> Delegate;
 @end
 
