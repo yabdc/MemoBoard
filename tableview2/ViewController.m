@@ -127,6 +127,7 @@
     [UIView animateWithDuration:0.5 animations:^{
         [_button setFrame:new];
     }];
+    [_button setHidden:NO];
 //    NSLog(@"%@",info);
     self.imageView1.image =info[UIImagePickerControllerOriginalImage];
     [_InfoArray addObject:info[UIImagePickerControllerOriginalImage]];

@@ -1,75 +1,68 @@
 //
-//  FollowListTVC.m
-//  tableview2
+//  SidebarViewController.m
+//  memoBoard
 //
-//  Created by 詹鎮豪 on 2015/4/9.
+//  Created by 羅祐昌 on 2015/4/14.
 //  Copyright (c) 2015年 www. All rights reserved.
 //
 
-#import "FollowListTVC.h"
-#import "FollowContentTVC.h"
-#import "SWRevealViewController.h"
-@interface FollowListTVC ()
-{
-    NSMutableArray *FollowList;
-}
+#import "SidebarViewController.h"
+
+@interface SidebarViewController ()
 
 @end
 
-@implementation FollowListTVC
+@implementation SidebarViewController{
+    NSArray *menuItem;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //navigation bar
-    SWRevealViewController *revealViewController = self.revealViewController;//self為何可以呼叫revealViewController?
-    if (revealViewController) {
-        [self.sidebarButton setTarget:self.revealViewController];
-        [self.sidebarButton setAction:@selector(revealToggle:)];
-        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-    }
-
+    menuItem = @[@"title",@"home",@"profile",@"set",@"about",@"signOut"];
     
-    NSArray *textArray=@[@"一年甲班",@"三年六班",@"二年乙班"];
-    FollowList = [NSMutableArray new];
-    [FollowList addObjectsFromArray:textArray];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
-    // Return the number of sections.
+
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-    // Return the number of rows in the section.
-    return FollowList.count;
+
+    return menuItem.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    cell.textLabel.text=FollowList[indexPath.row];
-    // Configure the cell...
+    //使用自訂cell
+    NSString *cellIdentifiler = [menuItem objectAtIndex:indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifiler forIndexPath:indexPath];
+    
     
     return cell;
 }
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    FollowContentTVC *tvc=segue.destinationViewController;
-    NSIndexPath *select = self.tableView.indexPathForSelectedRow;
-    tvc.receiveTitle =FollowList[select.row];
-    
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *cellIdentifiler = [menuItem objectAtIndex:indexPath.row];
+    if ([cellIdentifiler isEqualToString:@"signOut"]) {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"登出" message:@"確定登出" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            //TODO:登出帳號回到首頁
+        }];
+        UIAlertAction *cancelButton = [UIAlertAction actionWithTitle:@"Cancek" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+            //
+        }];
+        [alertController addAction:okButton];
+        [alertController addAction:cancelButton];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
 }
-
-
 
 /*
 // Override to support conditional editing of the table view.
@@ -105,14 +98,6 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -24,6 +24,18 @@
 		B6195DBF1AD64D3B00F75E7E /* FollowContentTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6195DBE1AD64D3B00F75E7E /* FollowContentTVC.m */; };
 		B626B8411ADAF5000021C80E /* ShowMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B626B8401ADAF5000021C80E /* ShowMessageVC.m */; };
 		B6AE5DCD1AD8C92600165146 /* settings-25.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE5DCC1AD8C92600165146 /* settings-25.png */; };
+		E12A2F161ADCF0E600E10B8A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E12A2F151ADCF0E600E10B8A /* SWRevealViewController.m */; };
+		E1D0D77D1ADD5EEE00D1E509 /* save-26.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D0D77C1ADD5EEE00D1E509 /* save-26.png */; };
+		E1D0D77F1ADD611000D1E509 /* home-24.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D0D77E1ADD611000D1E509 /* home-24.png */; };
+		E1EEECF81ADCF75C00F703F1 /* menu-26.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EEECF71ADCF75C00F703F1 /* menu-26.png */; };
+		E1EEECFB1ADCFB6E00F703F1 /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EEECFA1ADCFB6E00F703F1 /* SidebarViewController.m */; };
+		E1EEECFF1ADD039C00F703F1 /* contacts-26.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EEECFC1ADD039C00F703F1 /* contacts-26.png */; };
+		E1EEED001ADD039C00F703F1 /* settings2-24.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EEECFD1ADD039C00F703F1 /* settings2-24.png */; };
+		E1EEED011ADD039C00F703F1 /* exit-26.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EEECFE1ADD039C00F703F1 /* exit-26.png */; };
+		E1EEED041ADD091D00F703F1 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EEED031ADD091D00F703F1 /* ProfileViewController.m */; };
+		E1EEED071ADD0A4400F703F1 /* info-24.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EEED051ADD0A4400F703F1 /* info-24.png */; };
+		E1EEED121ADD0CC400F703F1 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EEED111ADD0CC400F703F1 /* AboutViewController.m */; };
+		E1EEED151ADD0CD500F703F1 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EEED141ADD0CD500F703F1 /* SettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +78,23 @@
 		B626B83F1ADAF5000021C80E /* ShowMessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMessageVC.h; sourceTree = "<group>"; };
 		B626B8401ADAF5000021C80E /* ShowMessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMessageVC.m; sourceTree = "<group>"; };
 		B6AE5DCC1AD8C92600165146 /* settings-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-25.png"; sourceTree = "<group>"; };
+		E12A2F141ADCF0E600E10B8A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		E12A2F151ADCF0E600E10B8A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		E1D0D77C1ADD5EEE00D1E509 /* save-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "save-26.png"; sourceTree = "<group>"; };
+		E1D0D77E1ADD611000D1E509 /* home-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-24.png"; sourceTree = "<group>"; };
+		E1EEECF71ADCF75C00F703F1 /* menu-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-26.png"; path = "../menu-26.png"; sourceTree = "<group>"; };
+		E1EEECF91ADCFB6E00F703F1 /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarViewController.h; sourceTree = "<group>"; };
+		E1EEECFA1ADCFB6E00F703F1 /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarViewController.m; sourceTree = "<group>"; };
+		E1EEECFC1ADD039C00F703F1 /* contacts-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contacts-26.png"; sourceTree = "<group>"; };
+		E1EEECFD1ADD039C00F703F1 /* settings2-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings2-24.png"; sourceTree = "<group>"; };
+		E1EEECFE1ADD039C00F703F1 /* exit-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit-26.png"; sourceTree = "<group>"; };
+		E1EEED021ADD091D00F703F1 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = Images/ProfileViewController.h; sourceTree = "<group>"; };
+		E1EEED031ADD091D00F703F1 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = Images/ProfileViewController.m; sourceTree = "<group>"; };
+		E1EEED051ADD0A4400F703F1 /* info-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-24.png"; sourceTree = "<group>"; };
+		E1EEED101ADD0CC400F703F1 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		E1EEED111ADD0CC400F703F1 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		E1EEED131ADD0CD500F703F1 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		E1EEED141ADD0CD500F703F1 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +118,9 @@
 		63A722001A92CF9E003C143A = {
 			isa = PBXGroup;
 			children = (
+				63A722321A92D23A003C143A /* Images */,
 				63A7220B1A92CF9E003C143A /* tableview2 */,
+				E12A2F131ADCF0E600E10B8A /* SWRevealViewController */,
 				63A722251A92CF9E003C143A /* tableview2Tests */,
 				63A7220A1A92CF9E003C143A /* Products */,
 			);
@@ -107,7 +138,6 @@
 		63A7220B1A92CF9E003C143A /* tableview2 */ = {
 			isa = PBXGroup;
 			children = (
-				63A722321A92D23A003C143A /* Images */,
 				63A722101A92CF9E003C143A /* AppDelegate.h */,
 				63A722111A92CF9E003C143A /* AppDelegate.m */,
 				63A722131A92CF9E003C143A /* ViewController.h */,
@@ -127,6 +157,7 @@
 				B617881D1AD94CD200CF1D4A /* AdminMainTVC-2.m */,
 				B61788191AD94C4700CF1D4A /* SearchTVC.h */,
 				B617881A1AD94C4700CF1D4A /* SearchTVC.m */,
+				E1D0D77B1ADD5B5D00D1E509 /* NavigationBar */,
 				63A7220C1A92CF9E003C143A /* Supporting Files */,
 			);
 			path = tableview2;
@@ -161,12 +192,44 @@
 		63A722321A92D23A003C143A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E1D0D77E1ADD611000D1E509 /* home-24.png */,
+				E1D0D77C1ADD5EEE00D1E509 /* save-26.png */,
+				E1EEED051ADD0A4400F703F1 /* info-24.png */,
+				E1EEECFC1ADD039C00F703F1 /* contacts-26.png */,
+				E1EEECFD1ADD039C00F703F1 /* settings2-24.png */,
+				E1EEECFE1ADD039C00F703F1 /* exit-26.png */,
+				E1EEECF71ADCF75C00F703F1 /* menu-26.png */,
 				B6195DB11AD6488500F75E7E /* megaphone2-24.png */,
 				B6195DB21AD6488500F75E7E /* purchase_order-26.png */,
 				B6195DB31AD6488500F75E7E /* search.png */,
 				B6AE5DCC1AD8C92600165146 /* settings-25.png */,
 			);
-			path = Images;
+			name = Images;
+			path = tableview2/Images;
+			sourceTree = "<group>";
+		};
+		E12A2F131ADCF0E600E10B8A /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E12A2F141ADCF0E600E10B8A /* SWRevealViewController.h */,
+				E12A2F151ADCF0E600E10B8A /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		E1D0D77B1ADD5B5D00D1E509 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				E1EEECF91ADCFB6E00F703F1 /* SidebarViewController.h */,
+				E1EEECFA1ADCFB6E00F703F1 /* SidebarViewController.m */,
+				E1EEED021ADD091D00F703F1 /* ProfileViewController.h */,
+				E1EEED031ADD091D00F703F1 /* ProfileViewController.m */,
+				E1EEED101ADD0CC400F703F1 /* AboutViewController.h */,
+				E1EEED111ADD0CC400F703F1 /* AboutViewController.m */,
+				E1EEED131ADD0CD500F703F1 /* SettingViewController.h */,
+				E1EEED141ADD0CD500F703F1 /* SettingViewController.m */,
+			);
+			name = NavigationBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,12 +312,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1EEECF81ADCF75C00F703F1 /* menu-26.png in Resources */,
+				E1EEED071ADD0A4400F703F1 /* info-24.png in Resources */,
+				E1D0D77F1ADD611000D1E509 /* home-24.png in Resources */,
+				E1D0D77D1ADD5EEE00D1E509 /* save-26.png in Resources */,
 				63A722181A92CF9E003C143A /* Main.storyboard in Resources */,
 				63A7221D1A92CF9E003C143A /* LaunchScreen.xib in Resources */,
 				B6195DB51AD6488500F75E7E /* purchase_order-26.png in Resources */,
+				E1EEED011ADD039C00F703F1 /* exit-26.png in Resources */,
 				B6AE5DCD1AD8C92600165146 /* settings-25.png in Resources */,
+				E1EEED001ADD039C00F703F1 /* settings2-24.png in Resources */,
 				63A7221A1A92CF9E003C143A /* Images.xcassets in Resources */,
 				B6195DB41AD6488500F75E7E /* megaphone2-24.png in Resources */,
+				E1EEECFF1ADD039C00F703F1 /* contacts-26.png in Resources */,
 				B6195DB61AD6488500F75E7E /* search.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,10 +348,15 @@
 				B6195DBF1AD64D3B00F75E7E /* FollowContentTVC.m in Sources */,
 				B6195DB91AD64A2900F75E7E /* AdminMainTVC.m in Sources */,
 				63A722121A92CF9E003C143A /* AppDelegate.m in Sources */,
+				E1EEED121ADD0CC400F703F1 /* AboutViewController.m in Sources */,
 				B617881E1AD94CD200CF1D4A /* AdminMainTVC-2.m in Sources */,
 				63A7220F1A92CF9E003C143A /* main.m in Sources */,
+				E12A2F161ADCF0E600E10B8A /* SWRevealViewController.m in Sources */,
 				B6195DBC1AD64D0F00F75E7E /* FollowListTVC.m in Sources */,
 				B626B8411ADAF5000021C80E /* ShowMessageVC.m in Sources */,
+				E1EEED041ADD091D00F703F1 /* ProfileViewController.m in Sources */,
+				E1EEECFB1ADCFB6E00F703F1 /* SidebarViewController.m in Sources */,
+				E1EEED151ADD0CD500F703F1 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +469,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -406,6 +482,7 @@
 				INFOPLIST_FILE = tableview2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = memoBoard;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -416,6 +493,7 @@
 				INFOPLIST_FILE = tableview2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = memoBoard;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -7,7 +7,7 @@
 //
 
 #import "SearchTVC.h"
-
+#import "SWRevealViewController.h"
 @interface SearchTVC ()
 
 @end
@@ -17,11 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //navigation bar
+    SWRevealViewController *revealViewController = self.revealViewController;//self為何可以呼叫revealViewController?
+    if (revealViewController) {
+        [self.sidebarButton setTarget:self.revealViewController];
+        [self.sidebarButton setAction:@selector(revealToggle:)];
+        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,13 +35,13 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
+
     // Return the number of sections.
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
     return 0;
 }

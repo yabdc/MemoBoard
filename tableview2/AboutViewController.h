@@ -1,14 +1,14 @@
 //
-//  FollowListTVC.h
-//  tableview2
+//  AboutViewController.h
+//  memoBoard
 //
-//  Created by 詹鎮豪 on 2015/4/9.
+//  Created by 羅祐昌 on 2015/4/14.
 //  Copyright (c) 2015年 www. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface FollowListTVC : UITableViewController
+@interface AboutViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
 @end

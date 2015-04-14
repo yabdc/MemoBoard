@@ -7,7 +7,7 @@
 //
 
 #import "AdminMainTVC.h"
-
+#import "SWRevealViewController.h"
 @interface AdminMainTVC ()<UISearchBarDelegate>
 {
     NSMutableArray *bandArray;
@@ -21,6 +21,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //navigation bar
+    SWRevealViewController *revealViewController = self.revealViewController;//self為何可以呼叫revealViewController?
+    if (revealViewController) {
+        [self.sidebarButton setTarget:self.revealViewController];
+        [self.sidebarButton setAction:@selector(revealToggle:)];
+        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    }
+    
     self.searchBar.delegate=self;
     bandArray = [[NSMutableArray alloc]initWithObjects:@"一年甲班",@"三年六班",@"二年甲班",@"二年乙班",@"五年丙班",@"六年甲班",@"四年乙班",@"二乙班", nil];
     origingroupListArr = [[NSMutableArray alloc]initWithArray:bandArray];
@@ -107,6 +115,7 @@
     //然后使用indexPathForCell方法，就得到indexPath了~
     NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
     //  NSLog(@"%ld",(long)indexPath.row);
+    
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"一經刪除便無法復原" preferredStyle:UIAlertControllerStyleActionSheet];
     
     //  利用NSMutableAttributedString，設定多種屬性及Range去變更alertController(局部或全部)字級、顏色，Range:“警告”為兩個字元，所以設定0~2
@@ -126,7 +135,7 @@
                                               message:@"一經刪除便無法復原"
                                               preferredStyle:UIAlertControllerStyleAlert];
         [alertController setValue:delectstring forKey:@"attributedTitle"];
-       
+        
         
         UIAlertAction *okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK action")
                                                            style:UIAlertActionStyleDefault handler:^(UIAlertAction *action)
