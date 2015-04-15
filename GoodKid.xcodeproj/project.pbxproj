@@ -49,7 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		63A722091A92CF9E003C143A /* memoBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memoBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A722091A92CF9E003C143A /* GoodKids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodKids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A7220D1A92CF9E003C143A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63A7220E1A92CF9E003C143A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63A722101A92CF9E003C143A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				63A722321A92D23A003C143A /* Images */,
-				63A7220B1A92CF9E003C143A /* tableview2 */,
+				63A7220B1A92CF9E003C143A /* GoodKids */,
 				E12A2F131ADCF0E600E10B8A /* SWRevealViewController */,
 				63A722251A92CF9E003C143A /* tableview2Tests */,
 				63A7220A1A92CF9E003C143A /* Products */,
@@ -129,13 +129,13 @@
 		63A7220A1A92CF9E003C143A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63A722091A92CF9E003C143A /* memoBoard.app */,
+				63A722091A92CF9E003C143A /* GoodKids.app */,
 				63A722221A92CF9E003C143A /* memoBoardTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		63A7220B1A92CF9E003C143A /* tableview2 */ = {
+		63A7220B1A92CF9E003C143A /* GoodKids */ = {
 			isa = PBXGroup;
 			children = (
 				63A722101A92CF9E003C143A /* AppDelegate.h */,
@@ -160,6 +160,7 @@
 				E1D0D77B1ADD5B5D00D1E509 /* NavigationBar */,
 				63A7220C1A92CF9E003C143A /* Supporting Files */,
 			);
+			name = GoodKids;
 			path = tableview2;
 			sourceTree = "<group>";
 		};
@@ -235,9 +236,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		63A722081A92CF9E003C143A /* memoBoard */ = {
+		63A722081A92CF9E003C143A /* GoodKids */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63A7222C1A92CF9E003C143A /* Build configuration list for PBXNativeTarget "memoBoard" */;
+			buildConfigurationList = 63A7222C1A92CF9E003C143A /* Build configuration list for PBXNativeTarget "GoodKids" */;
 			buildPhases = (
 				63A722051A92CF9E003C143A /* Sources */,
 				63A722061A92CF9E003C143A /* Frameworks */,
@@ -247,14 +248,14 @@
 			);
 			dependencies = (
 			);
-			name = memoBoard;
+			name = GoodKids;
 			productName = tableview2;
-			productReference = 63A722091A92CF9E003C143A /* memoBoard.app */;
+			productReference = 63A722091A92CF9E003C143A /* GoodKids.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63A722211A92CF9E003C143A /* memoBoardTests */ = {
+		63A722211A92CF9E003C143A /* GoodKidsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63A7222F1A92CF9E003C143A /* Build configuration list for PBXNativeTarget "memoBoardTests" */;
+			buildConfigurationList = 63A7222F1A92CF9E003C143A /* Build configuration list for PBXNativeTarget "GoodKidsTests" */;
 			buildPhases = (
 				63A7221E1A92CF9E003C143A /* Sources */,
 				63A7221F1A92CF9E003C143A /* Frameworks */,
@@ -265,7 +266,7 @@
 			dependencies = (
 				63A722241A92CF9E003C143A /* PBXTargetDependency */,
 			);
-			name = memoBoardTests;
+			name = GoodKidsTests;
 			productName = tableview2Tests;
 			productReference = 63A722221A92CF9E003C143A /* memoBoardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -288,7 +289,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 63A722041A92CF9E003C143A /* Build configuration list for PBXProject "memoBoard" */;
+			buildConfigurationList = 63A722041A92CF9E003C143A /* Build configuration list for PBXProject "GoodKid" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -301,8 +302,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				63A722081A92CF9E003C143A /* memoBoard */,
-				63A722211A92CF9E003C143A /* memoBoardTests */,
+				63A722081A92CF9E003C143A /* GoodKids */,
+				63A722211A92CF9E003C143A /* GoodKidsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -373,7 +374,7 @@
 /* Begin PBXTargetDependency section */
 		63A722241A92CF9E003C143A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 63A722081A92CF9E003C143A /* memoBoard */;
+			target = 63A722081A92CF9E003C143A /* GoodKids */;
 			targetProxy = 63A722231A92CF9E003C143A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -481,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tableview2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = memoBoard;
+				PRODUCT_NAME = GoodKids;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -492,7 +493,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tableview2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = memoBoard;
+				PRODUCT_NAME = GoodKids;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -512,7 +513,7 @@
 				INFOPLIST_FILE = tableview2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = memoBoardTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/memoBoard.app/memoBoard";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodKids.app/GoodKids";
 			};
 			name = Debug;
 		};
@@ -527,14 +528,14 @@
 				INFOPLIST_FILE = tableview2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = memoBoardTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/memoBoard.app/memoBoard";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodKids.app/GoodKids";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		63A722041A92CF9E003C143A /* Build configuration list for PBXProject "memoBoard" */ = {
+		63A722041A92CF9E003C143A /* Build configuration list for PBXProject "GoodKid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63A7222A1A92CF9E003C143A /* Debug */,
@@ -543,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63A7222C1A92CF9E003C143A /* Build configuration list for PBXNativeTarget "memoBoard" */ = {
+		63A7222C1A92CF9E003C143A /* Build configuration list for PBXNativeTarget "GoodKids" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63A7222D1A92CF9E003C143A /* Debug */,
@@ -552,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63A7222F1A92CF9E003C143A /* Build configuration list for PBXNativeTarget "memoBoardTests" */ = {
+		63A7222F1A92CF9E003C143A /* Build configuration list for PBXNativeTarget "GoodKidsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63A722301A92CF9E003C143A /* Debug */,
