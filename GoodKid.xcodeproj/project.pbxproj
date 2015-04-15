@@ -121,7 +121,7 @@
 				63A722321A92D23A003C143A /* Images */,
 				63A7220B1A92CF9E003C143A /* GoodKids */,
 				E12A2F131ADCF0E600E10B8A /* SWRevealViewController */,
-				63A722251A92CF9E003C143A /* tableview2Tests */,
+				63A722251A92CF9E003C143A /* GoodKidsTests */,
 				63A7220A1A92CF9E003C143A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -160,8 +160,7 @@
 				E1D0D77B1ADD5B5D00D1E509 /* NavigationBar */,
 				63A7220C1A92CF9E003C143A /* Supporting Files */,
 			);
-			name = GoodKids;
-			path = tableview2;
+			path = GoodKids;
 			sourceTree = "<group>";
 		};
 		63A7220C1A92CF9E003C143A /* Supporting Files */ = {
@@ -173,13 +172,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		63A722251A92CF9E003C143A /* tableview2Tests */ = {
+		63A722251A92CF9E003C143A /* GoodKidsTests */ = {
 			isa = PBXGroup;
 			children = (
 				63A722281A92CF9E003C143A /* tableview2Tests.m */,
 				63A722261A92CF9E003C143A /* Supporting Files */,
 			);
-			path = tableview2Tests;
+			path = GoodKidsTests;
 			sourceTree = "<group>";
 		};
 		63A722261A92CF9E003C143A /* Supporting Files */ = {
