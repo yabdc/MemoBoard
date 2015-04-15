@@ -39,8 +39,12 @@
         [_messageDic setValue:_titleText.text forKey:@"title"];
         [_messageDic setValue:[self getNowTime] forKey:@"date"];
         [_messageDic setValue:_contentText.text forKey:@"content"];
-        [_messageDic setValue:_InfoArray[0] forKey:@"image"];
-
+        NSLog(@"%@",_InfoArray[0]);
+        if (_InfoArray[0]!=NULL) {
+            [_messageDic setValue:_InfoArray[0] forKey:@"image"];
+        }
+        
+        
         
         [self.Delegate ViewController:self messageDic:_messageDic];
     }else if (_flag==2){

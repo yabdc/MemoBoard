@@ -67,7 +67,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    cell.imageView.image=messageArray[indexPath.row][@"image"];
+    NSLog(@"%@",messageArray[indexPath.row][@"image"]);
+    if (messageArray[indexPath.row][@"image"]) {
+        cell.imageView.image=messageArray[indexPath.row][@"image"];
+    }
+    
     cell.textLabel.text=messageArray[indexPath.row][@"title"];
     cell.accessoryView = [self addCustAccessoryBtn];
     // Configure the cell...
