@@ -20,5 +20,6 @@
 @property (assign,nonatomic) NSInteger flag;//1.新增  2.修改
 @property (nonatomic,strong) NSMutableDictionary *messageDic;
 @property (strong,nonatomic) id<ViewControllerDelegate> Delegate;
+@property (strong,nonatomic) NSDictionary *receiveEditDic;
 @end
 

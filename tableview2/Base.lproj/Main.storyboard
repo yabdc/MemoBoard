@@ -68,7 +68,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="qwD-Ex-lv5" style="IBUITableViewCellStyleDefault" id="gFb-5R-tVB">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="Cell" textLabel="qwD-Ex-lv5" style="IBUITableViewCellStyleDefault" id="gFb-5R-tVB">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gFb-5R-tVB" id="ysB-O6-kNk">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -116,12 +116,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pd-rF-HUu">
-                                <rect key="frame" x="25" y="128" width="271" height="247"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hX9-hQ-bTv">
                                 <rect key="frame" x="16" y="374" width="288" height="137"/>
                             </imageView>
@@ -131,11 +125,28 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htb-AM-jbT">
+                                <rect key="frame" x="16" y="101" width="288" height="265"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="訊息" id="oSS-Tv-wIw"/>
+                    <navigationItem key="navigationItem" title="訊息" id="oSS-Tv-wIw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="urw-Ul-In7">
+                            <connections>
+                                <action selector="pressEditAction:" destination="46V-np-d1r" id="udK-qI-H8I"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="contentText" destination="htb-AM-jbT" id="Smc-f6-bhs"/>
+                        <outlet property="imageView" destination="hX9-hQ-bTv" id="thU-Hv-Vva"/>
+                        <outlet property="timeText" destination="77B-AK-riF" id="BvT-fb-iuk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lEb-WS-v1w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -232,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Te-Jw-7Hq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3452" y="-227"/>
+            <point key="canvasLocation" x="2640" y="-249"/>
         </scene>
         <!--Follow-->
         <scene sceneID="htf-zV-c0Q">

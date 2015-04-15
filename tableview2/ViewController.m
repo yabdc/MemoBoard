@@ -23,11 +23,21 @@
 
 @implementation ViewController
 
+-(NSString *)getNowTime{
+    NSDate *now = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
+//    NSLog(@"The Current Time is %@",[dateFormatter stringFromDate:now]);
+    NSString *nowTime=[dateFormatter stringFromDate:now];
+    return nowTime;
+}
+
 -(void)doneCust{
     if (self.flag==1) {
         //新增存擋
         [_messageDic setValue:_titleText.text forKey:@"title"];
-        [_messageDic setValue:_dateText.text forKey:@"date"];
+        [_messageDic setValue:[self getNowTime] forKey:@"date"];
         [_messageDic setValue:_contentText.text forKey:@"content"];
         [_messageDic setValue:_InfoArray[0] forKey:@"image"];
 
@@ -35,7 +45,11 @@
         [self.Delegate ViewController:self messageDic:_messageDic];
     }else if (_flag==2){
         //修改存擋
-        [self.Delegate ViewController:self messageDic:self.messageDic];
+        [_messageDic setValue:_titleText.text forKey:@"title"];
+        [_messageDic setValue:[self getNowTime] forKey:@"date"];
+        [_messageDic setValue:_contentText.text forKey:@"content"];
+        [_messageDic setValue:_InfoArray[0] forKey:@"image"];
+        [self.Delegate ViewController:self messageDic:_messageDic];
     }
     
     [self.navigationController popViewControllerAnimated:YES];
@@ -46,27 +60,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    //新增完成按鈕
     UIBarButtonItem *doneButton=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneCust)];
     self.navigationItem.rightBarButtonItem=doneButton;
+    //資料初始化
     _messageDic =[NSMutableDictionary new];
     _InfoArray=[NSMutableArray new];
-    //    self.noText.enabled=NO;
-    
-    
     if (_flag==1) {
+        //新增模式
         self.title=@"New Message";
-        
+        _dateText.text=[self getNowTime];
     }else if(_flag==2){
+        //修改模式
         self.title=@"Edit Message";
-        _InfoArray[0]=_messageDic[@""];
-        _titleText.text=_messageDic[@""];
-        _dateText.text=_messageDic[@""];
-        _contentText.text=_messageDic[@""];
-        _imageView1.image=_InfoArray[0];
-        
+        NSLog(@"%@",_receiveEditDic);
+        _InfoArray[0]=_receiveEditDic[@"image"];
+        _titleText.text=_receiveEditDic[@"title"];
+        _dateText.text=_receiveEditDic[@"date"];
+        _contentText.text=_receiveEditDic[@"content"];
+        _imageView1.image=_receiveEditDic[@"image"];
+        [_button setBackgroundColor:[UIColor clearColor]];
+        [_button setTitle:@"" forState:UIControlStateNormal];
     }
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -119,15 +135,8 @@
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    
-    
-    CGRect new = CGRectMake(78, 335, 70, 70);
-    
-    new.origin.x+=80;
-    [UIView animateWithDuration:0.5 animations:^{
-        [_button setFrame:new];
-    }];
-    [_button setHidden:NO];
+    [_button setBackgroundColor:[UIColor clearColor]];
+    [_button setTitle:@"" forState:UIControlStateNormal];
 //    NSLog(@"%@",info);
     self.imageView1.image =info[UIImagePickerControllerOriginalImage];
     [_InfoArray addObject:info[UIImagePickerControllerOriginalImage]];
@@ -137,6 +146,8 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
+
+
 
 
 

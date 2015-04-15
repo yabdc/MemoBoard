@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ShowMessageVC : UIViewController
-
+@property (strong , nonatomic) NSDictionary *receiveDic;
 @end
